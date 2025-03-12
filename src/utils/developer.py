@@ -7,7 +7,7 @@ class Developer(Employee):
         self._programming_languages = progLang
         self._exp_year = expYear
 
-    def getSalary(self) -> float:
+    def get_salary(self) -> float:
         if self._exp_year >= 5:
             return self._baseSal + self._exp_year * 2000000
         elif self._exp_year >= 3:

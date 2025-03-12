@@ -6,7 +6,7 @@ class Tester(Employee):
         self.__bonus_rate = bonusRate
         self.__type = typee
         
-    def getSalary(self) -> float:
+    def get_salary(self) -> float:
         return self._baseSal + (self.__bonus_rate / 100) * self._baseSal
     
     def update_information(self):

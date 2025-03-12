@@ -5,8 +5,8 @@ class TeamLeader(Developer):
         super().__init__(role, empID, empName, baseSal, teamName, progLang, expYear)
         self.__bonus_rate = bonusRate
         
-    def getSalary(self) -> float:
-        return super().getSalary() + (self.__bonus_rate / 100) * super().getSalary()
+    def get_salary(self) -> float:
+        return super().get_salary() + (self.__bonus_rate / 100) * super().get_salary()
     
     def update_information(self, data):
         update_info = super().update_information()

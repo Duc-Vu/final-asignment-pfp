@@ -7,7 +7,7 @@ class Employee(ABC):
         self._baseSal = baseSal
 
     @abstractmethod
-    def getSalary(self):
+    def get_salary(self):
         pass
     
     @abstractmethod
@@ -31,7 +31,7 @@ class Employee(ABC):
         return {"role": self._role,
                 "empName": self._empName,
                 "baseSal": self._baseSal,
-                "Salary": self.getSalary()}
+                "Salary": self.get_salary()}
 
     def __str__(self) -> str:
         return f"{self._empID}_{self._empName}_{self._baseSal}"
