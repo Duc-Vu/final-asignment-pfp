@@ -1,0 +1,69 @@
+{
+    "SE1010": {
+        "role": "tester",
+        "empName": "bertolt",
+        "baseSal": 7000000.0,
+        "Salary": 7210000.0,
+        "Bonus Rate": 3.0,
+        "Type": "mt"
+    },
+    "SE1007": {
+        "role": "developer",
+        "empName": "annie",
+        "baseSal": 5000000.0,
+        "Salary": 8000000.0,
+        "teamName": "juggernaut",
+        "Programming Language": [
+            "python",
+            "rust"
+        ],
+        "expYear": 3
+    },
+    "SE1011": {
+        "role": "tester",
+        "empName": "armin",
+        "baseSal": 12000000.0,
+        "Salary": 12480000.0,
+        "Bonus Rate": 4.0,
+        "Type": "am"
+    },
+    "SE1004": {
+        "role": "developer",
+        "empName": "john",
+        "baseSal": 10000000.0,
+        "Salary": 13000000.0,
+        "teamName": "juggernaut",
+        "Programming Language": [
+            "go",
+            "python",
+            "c++"
+        ],
+        "expYear": 3
+    },
+    "SE1016": {
+        "role": "teamleader",
+        "empName": "eren",
+        "baseSal": 15000000.0,
+        "Salary": 18360000.0,
+        "teamName": "paradis",
+        "Programming Language": [
+            "rust",
+            "java"
+        ],
+        "expYear": 3,
+        "Bonus Rate": 2.0
+    },
+    "SE1012": {
+        "role": "teamleader",
+        "empName": "mikasa",
+        "baseSal": 15000000.0,
+        "Salary": 19950000.0,
+        "teamName": "juggernaut",
+        "Programming Language": [
+            "c++",
+            "rust"
+        ],
+        "expYear": 4,
+        "Bonus Rate": 5.0
+    }
+}
