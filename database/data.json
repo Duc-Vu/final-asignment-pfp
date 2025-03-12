@@ -65,5 +65,20 @@
         ],
         "expYear": 4,
         "Bonus Rate": 5.0
+    },
+    "SE19123": {
+        "role": "developer",
+        "empName": "trunkwoc",
+        "baseSal": 100000.0,
+        "Salary": 20100000.0,
+        "teamName": "phai yeager",
+        "Programming Language": [
+            "python",
+            "c++",
+            "rust",
+            "javascript",
+            "html"
+        ],
+        "expYear": 10
     }
 }

@@ -1,6 +1,6 @@
 import json
 from tabulate import tabulate
-from ..model import *
+from ..models import *
 from ..menu import menu
 
 data_file_path = "database/data.json"
