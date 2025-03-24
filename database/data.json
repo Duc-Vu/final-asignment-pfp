@@ -1,84 +1,456 @@
 {
-    "SE1010": {
+    "se19037": {
         "role": "tester",
-        "empName": "bertolt",
-        "baseSal": 7000000.0,
-        "Salary": 7210000.0,
-        "Bonus Rate": 3.0,
+        "empName": "warren greer",
+        "baseSal": 5764378.0,
+        "Bonus Rate": 4.0,
+        "Salary": 5994953.12,
         "Type": "mt"
     },
-    "SE1007": {
-        "role": "developer",
-        "empName": "annie",
-        "baseSal": 5000000.0,
-        "Salary": 8000000.0,
-        "teamName": "juggernaut",
+    "se19001": {
+        "role": "teamleader",
+        "empName": "cyndi harris",
+        "baseSal": 5005417.0,
+        "Salary": 8325633.68,
+        "teamName": "frontend team",
         "Programming Language": [
-            "python",
+            "javascript",
             "rust"
         ],
-        "expYear": 3
+        "expYear": 3,
+        "Bonus Rate": 4.0
     },
-    "SE1011": {
+    "se19032": {
         "role": "tester",
-        "empName": "armin",
-        "baseSal": 12000000.0,
-        "Salary": 12480000.0,
-        "Bonus Rate": 4.0,
+        "empName": "stephen bradley",
+        "baseSal": 8166734.0,
+        "Bonus Rate": 2.0,
+        "Salary": 8330068.68,
+        "Type": "mt"
+    },
+    "se19012": {
+        "role": "developer",
+        "empName": "sherman mckinney",
+        "baseSal": 8358072.0,
+        "teamName": "security team",
+        "Programming Language": [
+            "php",
+            "rust"
+        ],
+        "expYear": 4,
+        "Salary": 12358072.0
+    },
+    "se19005": {
+        "role": "teamleader",
+        "empName": "david fort",
+        "baseSal": 10386921.0,
+        "Salary": 14962397.84,
+        "teamName": "ai/ml team",
+        "Programming Language": [
+            "c#",
+            "shell/bash",
+            "ruby"
+        ],
+        "expYear": 4,
+        "Bonus Rate": 4.0
+    },
+    "se19031": {
+        "role": "tester",
+        "empName": "walter jeter",
+        "baseSal": 14883949.0,
+        "Bonus Rate": 2.0,
+        "Salary": 15181627.98,
+        "Type": "mt"
+    },
+    "se19002": {
+        "role": "teamleader",
+        "empName": "archie sorbo",
+        "baseSal": 18209827.0,
+        "Salary": 18756121.81,
+        "teamName": "fullstack team",
+        "Programming Language": [
+            "kotlin",
+            "c#"
+        ],
+        "expYear": 1,
+        "Bonus Rate": 3.0
+    },
+    "se19039": {
+        "role": "tester",
+        "empName": "phyllis peacock",
+        "baseSal": 17977530.0,
+        "Bonus Rate": 5.0,
+        "Salary": 18876406.5,
         "Type": "am"
     },
-    "SE1004": {
+    "se19035": {
         "role": "developer",
-        "empName": "john",
-        "baseSal": 10000000.0,
-        "Salary": 13000000.0,
-        "teamName": "juggernaut",
+        "empName": "kevin thomas",
+        "baseSal": 19372114.0,
+        "teamName": "ai/ml team",
         "Programming Language": [
-            "go",
-            "python",
-            "c++"
+            "c#",
+            "javascript",
+            "swift"
         ],
-        "expYear": 3
+        "expYear": 1,
+        "Salary": 19372114.0
     },
-    "SE1016": {
+    "se19024": {
+        "role": "developer",
+        "empName": "bernice pignone",
+        "baseSal": 17201980.0,
+        "teamName": "frontend team",
+        "Programming Language": [
+            "ruby",
+            "sql",
+            "kotlin",
+            "c"
+        ],
+        "expYear": 3,
+        "Salary": 20201980.0
+    },
+    "se19004": {
         "role": "teamleader",
-        "empName": "eren",
-        "baseSal": 15000000.0,
-        "Salary": 18360000.0,
-        "teamName": "paradis",
+        "empName": "matt davis",
+        "baseSal": 8016245.0,
+        "Salary": 20616732.35,
+        "teamName": "data engineering team",
+        "Programming Language": [
+            "javascript",
+            "html",
+            "kotlin"
+        ],
+        "expYear": 6,
+        "Bonus Rate": 3.0
+    },
+    "se19026": {
+        "role": "developer",
+        "empName": "florence hill",
+        "baseSal": 9106754.0,
+        "teamName": "frontend team",
+        "Programming Language": [
+            "c"
+        ],
+        "expYear": 6,
+        "Salary": 21106754.0
+    },
+    "se19025": {
+        "role": "developer",
+        "empName": "jacob harp",
+        "baseSal": 18436032.0,
+        "teamName": "frontend team",
+        "Programming Language": [
+            "ruby",
+            "javascript",
+            "html"
+        ],
+        "expYear": 3,
+        "Salary": 21436032.0
+    },
+    "se19041": {
+        "role": "teamleader",
+        "empName": "human",
+        "baseSal": 100000.0,
+        "Salary": 22110000.0,
+        "teamName": "human team",
+        "Programming Language": [
+            "rust"
+        ],
+        "expYear": 10,
+        "Bonus Rate": 10.0
+    },
+    "se19014": {
+        "role": "tester",
+        "empName": "freda howorth",
+        "baseSal": 21173053.0,
+        "Bonus Rate": 5.0,
+        "Salary": 22231705.65,
+        "Type": "am"
+    },
+    "se19017": {
+        "role": "developer",
+        "empName": "mike woods",
+        "baseSal": 8233287.0,
+        "teamName": "devops team",
+        "Programming Language": [
+            "php",
+            "ruby"
+        ],
+        "expYear": 7,
+        "Salary": 22233287.0
+    },
+    "se19028": {
+        "role": "developer",
+        "empName": "juan arrington",
+        "baseSal": 22628530.0,
+        "teamName": "data engineering team",
+        "Programming Language": [
+            "c#"
+        ],
+        "expYear": 2,
+        "Salary": 22628530.0
+    },
+    "se19034": {
+        "role": "tester",
+        "empName": "elizabeth allen",
+        "baseSal": 23174474.0,
+        "Bonus Rate": 2.0,
+        "Salary": 23637963.48,
+        "Type": "am"
+    },
+    "se19029": {
+        "role": "tester",
+        "empName": "megan wing",
+        "baseSal": 24328343.0,
+        "Bonus Rate": 5.0,
+        "Salary": 25544760.15,
+        "Type": "am"
+    },
+    "se19011": {
+        "role": "developer",
+        "empName": "derek whitacre",
+        "baseSal": 25692074.0,
+        "teamName": "security team",
+        "Programming Language": [
+            "swift",
+            "html",
+            "php",
+            "ruby"
+        ],
+        "expYear": 2,
+        "Salary": 25692074.0
+    },
+    "se19013": {
+        "role": "tester",
+        "empName": "edgar hester",
+        "baseSal": 24593638.0,
+        "Bonus Rate": 5.0,
+        "Salary": 25823319.9,
+        "Type": "am"
+    },
+    "se19009": {
+        "role": "tester",
+        "empName": "michael nichols",
+        "baseSal": 27718117.0,
+        "Bonus Rate": 4.0,
+        "Salary": 28826841.68,
+        "Type": "mt"
+    },
+    "se19023": {
+        "role": "developer",
+        "empName": "john boren",
+        "baseSal": 30796904.0,
+        "teamName": "backend team",
+        "Programming Language": [
+            "sql",
+            "typescript",
+            "rust"
+        ],
+        "expYear": 2,
+        "Salary": 30796904.0
+    },
+    "se19030": {
+        "role": "developer",
+        "empName": "carl stovall",
+        "baseSal": 18915698.0,
+        "teamName": "ai/ml team",
+        "Programming Language": [
+            "sql",
+            "ruby",
+            "shell/bash"
+        ],
+        "expYear": 7,
+        "Salary": 32915698.0
+    },
+    "se19000": {
+        "role": "teamleader",
+        "empName": "larry hale",
+        "baseSal": 29008627.0,
+        "Salary": 32968885.81,
+        "teamName": "backend team",
+        "Programming Language": [
+            "java"
+        ],
+        "expYear": 3,
+        "Bonus Rate": 3.0
+    },
+    "se19033": {
+        "role": "developer",
+        "empName": "michael traverso",
+        "baseSal": 21575753.0,
+        "teamName": "backend team",
+        "Programming Language": [
+            "typescript"
+        ],
+        "expYear": 7,
+        "Salary": 35575753.0
+    },
+    "se19003": {
+        "role": "teamleader",
+        "empName": "robert ratledge",
+        "baseSal": 26689163.0,
+        "Salary": 37422946.26,
+        "teamName": "devops team",
+        "Programming Language": [
+            "html",
+            "rust",
+            "c#",
+            "swift"
+        ],
+        "expYear": 5,
+        "Bonus Rate": 2.0
+    },
+    "se19021": {
+        "role": "tester",
+        "empName": "joel young",
+        "baseSal": 37910759.0,
+        "Bonus Rate": 2.0,
+        "Salary": 38668974.18,
+        "Type": "am"
+    },
+    "se19020": {
+        "role": "developer",
+        "empName": "richard smith",
+        "baseSal": 28652930.0,
+        "teamName": "security team",
+        "Programming Language": [
+            "kotlin",
+            "c",
+            "rust"
+        ],
+        "expYear": 6,
+        "Salary": 40652930.0
+    },
+    "se19038": {
+        "role": "developer",
+        "empName": "kenneth booth",
+        "baseSal": 32018310.0,
+        "teamName": "data engineering team",
+        "Programming Language": [
+            "swift",
+            "php",
+            "shell/bash"
+        ],
+        "expYear": 5,
+        "Salary": 42018310.0
+    },
+    "se19018": {
+        "role": "tester",
+        "empName": "jacob schleck",
+        "baseSal": 43781485.0,
+        "Bonus Rate": 5.0,
+        "Salary": 45970559.25,
+        "Type": "mt"
+    },
+    "se19008": {
+        "role": "tester",
+        "empName": "rebecca sizemore",
+        "baseSal": 44701488.0,
+        "Bonus Rate": 3.0,
+        "Salary": 46042532.64,
+        "Type": "mt"
+    },
+    "se19016": {
+        "role": "tester",
+        "empName": "edwin reynolds",
+        "baseSal": 46698513.0,
+        "Bonus Rate": 2.0,
+        "Salary": 47632483.26,
+        "Type": "am"
+    },
+    "se19027": {
+        "role": "developer",
+        "empName": "alice anderson",
+        "baseSal": 39654645.0,
+        "teamName": "ai/ml team",
         "Programming Language": [
             "rust",
             "java"
         ],
-        "expYear": 3,
-        "Bonus Rate": 2.0
+        "expYear": 5,
+        "Salary": 49654645.0
     },
-    "SE1012": {
-        "role": "teamleader",
-        "empName": "mikasa",
-        "baseSal": 15000000.0,
-        "Salary": 19950000.0,
-        "teamName": "juggernaut",
-        "Programming Language": [
-            "c++",
-            "rust"
-        ],
-        "expYear": 4,
-        "Bonus Rate": 5.0
+    "se19007": {
+        "role": "tester",
+        "empName": "kelly johnson",
+        "baseSal": 47811896.0,
+        "Bonus Rate": 4.0,
+        "Salary": 49724371.84,
+        "Type": "mt"
     },
-    "SE19123": {
+    "se19022": {
+        "role": "tester",
+        "empName": "esperanza congdon",
+        "baseSal": 47440272.0,
+        "Bonus Rate": 5.0,
+        "Salary": 49812285.6,
+        "Type": "am"
+    },
+    "se19019": {
         "role": "developer",
-        "empName": "trunkwoc",
-        "baseSal": 100000.0,
-        "Salary": 20100000.0,
-        "teamName": "phai yeager",
+        "empName": "nancy boyd",
+        "baseSal": 42375082.0,
+        "teamName": "frontend team",
         "Programming Language": [
-            "python",
-            "c++",
-            "rust",
-            "javascript",
-            "html"
+            "java",
+            "c++"
         ],
-        "expYear": 10
+        "expYear": 5,
+        "Salary": 52375082.0
+    },
+    "se19015": {
+        "role": "developer",
+        "empName": "tina callahan",
+        "baseSal": 33426446.0,
+        "teamName": "backend team",
+        "Programming Language": [
+            "php",
+            "sql",
+            "go"
+        ],
+        "expYear": 10,
+        "Salary": 53426446.0
+    },
+    "se19010": {
+        "role": "developer",
+        "empName": "francisco guthrie",
+        "baseSal": 45456075.0,
+        "teamName": "fullstack team",
+        "Programming Language": [
+            "c",
+            "go",
+            "typescript",
+            "php"
+        ],
+        "expYear": 5,
+        "Salary": 55456075.0
+    },
+    "se19006": {
+        "role": "teamleader",
+        "empName": "tammy alto",
+        "baseSal": 45251753.0,
+        "Salary": 56909305.59,
+        "teamName": "security team",
+        "Programming Language": [
+            "c++",
+            "swift",
+            "sql",
+            "java"
+        ],
+        "expYear": 5,
+        "Bonus Rate": 3.0
+    },
+    "se19036": {
+        "role": "developer",
+        "empName": "raymond lee",
+        "baseSal": 42250147.0,
+        "teamName": "backend team",
+        "Programming Language": [
+            "c",
+            "c++"
+        ],
+        "expYear": 8,
+        "Salary": 58250147.0
     }
 }

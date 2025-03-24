@@ -13,12 +13,13 @@ class TeamLeader(Developer):
         if update_info is None:
             return None
         
-        isTeamHasLeader = False
-        for key in data:
-            if data[key].get("teamName") == self._team_name and data[key]["role"] == "teamleader" and self._empID != key:
-                isTeamHasLeader = True
-                break
-            
+        isTeamHasLeader = any(
+        emp_data.get("teamName") == self._team_name and 
+        emp_data["role"] == "teamleader" and 
+        emp_id != self._empID
+        for emp_id, emp_data in data.items()
+        )
+        
         if isTeamHasLeader:
             print("\nTeam is alreally has Team Leader.")
             return None
