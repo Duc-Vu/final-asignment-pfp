@@ -2,7 +2,7 @@ import json
 import random
 import names
 
-Employee_Numbers = 40
+Employee_Numbers = 20
 
 # Danh sách team, vai trò và ngôn ngữ lập trình
 teams = ["backend team", "frontend team", "fullstack team", "devops team", 

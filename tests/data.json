@@ -1,4 +1,20 @@
 {
+    "004": {
+        "role": "tester",
+        "empName": "mike",
+        "baseSal": 5500.0,
+        "Salary": 5560.5,
+        "Bonus Rate": 1.1,
+        "Type": "mt"
+    },
+    "002": {
+        "role": "tester",
+        "empName": "new name",
+        "baseSal": 6000.0,
+        "Salary": 6072.0,
+        "Bonus Rate": 1.2,
+        "Type": "am"
+    },
     "sa1001": {
         "role": "teamleader",
         "empName": "ethan cain",
@@ -469,6 +485,21 @@
         "expYear": 5,
         "Salary": 55456075.0
     },
+    "se19006": {
+        "role": "teamleader",
+        "empName": "tammy alto",
+        "baseSal": 45251753.0,
+        "Salary": 56909305.59,
+        "teamName": "security team",
+        "Programming Language": [
+            "c++",
+            "swift",
+            "sql",
+            "java"
+        ],
+        "expYear": 5,
+        "Bonus Rate": 3.0
+    },
     "se19036": {
         "role": "developer",
         "empName": "raymond lee",
@@ -480,18 +511,5 @@
         ],
         "expYear": 8,
         "Salary": 58250147.0
-    },
-    "se19006": {
-        "role": "teamleader",
-        "empName": "tammy alto",
-        "baseSal": 45251753.0,
-        "Salary": 71776928.3,
-        "teamName": "security team",
-        "Programming Language": [
-            "python",
-            "go"
-        ],
-        "expYear": 10,
-        "Bonus Rate": 10.0
     }
 }
