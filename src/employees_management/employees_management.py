@@ -202,8 +202,8 @@ class EmployeeManagement():
                     break
                 case _:
                     print("\nError Number")
-                    
-
+          
+          
     def sort_employee(self, data, reverse=False):
         data = dict(sorted(data.items(), key=lambda x: (x[1]["Salary"], x[1]["empName"]), reverse=reverse))
         return data
