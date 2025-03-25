@@ -7,28 +7,13 @@ class Developer(Employee):
         self._programming_languages = progLang
         self._exp_year = expYear
 
-    def get_salary(self) -> float:
+    def get_salary(self):
         if self._exp_year >= 5:
             return self._baseSal + self._exp_year * 2000000
         elif self._exp_year >= 3:
             return self._baseSal + self._exp_year * 1000000
         else:
             return self._baseSal
-        
-    def update_information(self):
-        update_info = super().update_information()
-        if update_info is None:
-            return None
-        
-        try:
-            self._exp_year = int(input("Enter New Employee Experience Year: "))
-        except Exception as e:
-            print("\nInvalid Experience Year format.")
-        
-        self._programming_languages = input("Enter New Employee Programming Languages (Programming Languages 1, Programming Languages 2): ").split(",")
-        self._programming_languages = [char.strip().lower() for char in self._programming_languages]
-        self._team_name = input("Enter New Employee Team Name: ").lower()
-        return update_info + (self._team_name, self._programming_languages, self._exp_year)
         
     def to_dict(self):
         dev_dict = super().to_dict()
@@ -39,5 +24,5 @@ class Developer(Employee):
         })
         return dev_dict
 
-    def __str__(self) -> str:
+    def __str__(self):
         return super().__str__() + f"_{self._team_name}_{self._exp_year}"

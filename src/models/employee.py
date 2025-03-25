@@ -11,22 +11,6 @@ class Employee(ABC):
         pass
     
     @abstractmethod
-    def update_information(self):
-        self._empName = input("Enter New Employee Name: ").lower()
-        try:
-            self._baseSal = float(input("Enter New Employee Base Salary: "))
-        except Exception as e:
-            print("\nInvalid Base Salary Format.")
-            return None
-        
-        self._role = input("Enter New Role [Developer/Tester/TeamLeader]: ").lower()
-        if self._role not in ["developer", "tester", "teamleader"]:
-            print("\nInvalid Role")
-            return None
-        
-        return (self._empName, self._baseSal, self._role)
-    
-    @abstractmethod
     def to_dict(self):
         return {"role": self._role,
                 "empName": self._empName,
