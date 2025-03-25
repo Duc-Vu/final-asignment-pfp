@@ -46,15 +46,16 @@ class EmployeeManagement():
         ]
         rows.insert(0, headers)
         
-        nums_col = len(headers)
         max_len_list = get_max_colume_len(rows)
-        total_table_with = sum(max_len_list) + nums_col - 1
-        print("|" + "-" * total_table_with + "|")
+        
+        lines_separator = "|" + "+".join(["-" * i for i in max_len_list]) + "|"
+        print(lines_separator)
+        
         for row in rows:
-            for i in range(nums_col):
+            for i in len(headers):
                 print(f"|{str(row[i]).center(max_len_list[i])}", end="")
             print("|")
-            print("|" + "-" * total_table_with + "|")
+            print(lines_separator)
 
     def update_information_employee(self, role, empID):
         print("\n=== Update or Add Employee Information ===")
