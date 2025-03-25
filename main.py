@@ -1,10 +1,11 @@
 from src.employees_management.employees_management import EmployeeManagement 
 from database.loader import *
 from src.menus.menu import *
- 
+
 def main():
     while True:
-        data = load_file()
+        data = load_data()
+        print(f"\n=== Employees Management ===")
         option = show_menu(main_menu)
         em = EmployeeManagement(data, file_path)
         match option:

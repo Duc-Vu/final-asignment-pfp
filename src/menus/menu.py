@@ -1,5 +1,4 @@
 main_menu = (
-            "\n=== Employee Management Menu ===",
             "Show the Employee list", 
             "Add Employee", 
             "Update Employee", 
@@ -8,7 +7,6 @@ main_menu = (
              )
 
 add_employee_menu = (
-                    "\n=== Add Employee Menu ===",
                     "Add Developer", 
                     "Add Tester", 
                     "Add TeamLeader", 
@@ -16,7 +14,6 @@ add_employee_menu = (
                      )
 
 search_employee_menu = (
-    "\n=== Search Employee Menu ===",
     "Search By Name",
     "Search Tester Highest Salary",
     "Search Developer By Language",
@@ -24,8 +21,7 @@ search_employee_menu = (
 )
 
 def show_menu(menu):
-    print(menu[0])
-    index_menu = enumerate(menu[1:])
+    index_menu = enumerate(menu)
     for key, menu in index_menu:
         print(f"{key}. {menu}")
     return input("Choose the number: ")

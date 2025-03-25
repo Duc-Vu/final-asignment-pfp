@@ -96,6 +96,18 @@
         "expYear": 1,
         "Salary": 19372114.0
     },
+    "se20001": {
+        "role": "developer",
+        "empName": "levi ackerman",
+        "baseSal": 10000000.0,
+        "Salary": 20000000.0,
+        "teamName": "backend team",
+        "Programming Language": [
+            "solidify",
+            "proglang"
+        ],
+        "expYear": 5
+    },
     "se19024": {
         "role": "developer",
         "empName": "bernice pignone",

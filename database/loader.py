@@ -1,6 +1,6 @@
 import json
-file_path = "data.json"
-def load_file(file_path):
+file_path = "database/data.json"
+def load_data(file_path=file_path):
     try:
         with open(file_path, "r") as f:
             data = json.load(f)

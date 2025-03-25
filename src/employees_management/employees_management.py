@@ -1,5 +1,5 @@
 import json
-from tabulate import tabulate
+import os
 from ..models import *
 from ..menus import menu
 
@@ -16,28 +16,48 @@ class EmployeeManagement():
             json.dump(self.__data, f, indent=4)
 
     def show_employee_list(self, empIDList=None):
+        
+        def get_max_colume_len(all_rows):
+            max_len_list = []
+            nums_col = len(all_rows[0])
+            for col_idx in range(nums_col):
+                max_len = max([len(str(row[col_idx])) for row in all_rows])
+                max_len_list.append(max_len + 2)
+
+            return max_len_list
+            
+        
         headers = ["empID", "empName", "Role", "baseSal", "Salary", "Team Name", "Programming Languages", "expYear", "Bonus Rate", "Type"]
         key_list = empIDList or self.__data.keys()
         
-        rows = [
-        list(map(lambda x: x.title() if isinstance(x, str) else x, [
-            key, 
-            self.__data[key].get("empName", ""), 
-            self.__data[key].get("role", ""), 
+        rows = [[
+            key.upper(), 
+            self.__data[key].get("empName", "").title(), 
+            self.__data[key].get("role", "").title(), 
             self.__data[key].get("baseSal", ""), 
             self.__data[key].get("Salary", ""),
-            self.__data[key].get("teamName", ""), 
-            ", ".join(self.__data[key].get("Programming Language", "")), 
+            self.__data[key].get("teamName", "").title(), 
+            ", ".join(self.__data[key].get("Programming Language", "")).title(), 
             self.__data[key].get("expYear", ""), 
             self.__data[key].get("Bonus Rate", ""),
-            self.__data[key].get("Type", "")
-        ])) 
+            self.__data[key].get("Type", "").upper()
+        ]
         for key in key_list
         ]
-        print(tabulate(rows, headers=headers, tablefmt="grid", colalign=["center"]*len(headers) if len(rows) > 0 else None, floatfmt=",.0f"))
+        rows.insert(0, headers)
+        
+        nums_col = len(headers)
+        max_len_list = get_max_colume_len(rows)
+        total_table_with = sum(max_len_list) + nums_col - 1
+        print("|" + "-" * total_table_with + "|")
+        for row in rows:
+            for i in range(nums_col):
+                print(f"|{str(row[i]).center(max_len_list[i])}", end="")
+            print("|")
+            print("|" + "-" * total_table_with + "|")
 
     def update_information_employee(self, role, empID):
-        print("=== Get Information To Update Employee ===")
+        print("\n=== Update or Add Employee Information ===")
         empName = input("Enter Employee Name: ").lower()
                 
         try:
@@ -104,8 +124,9 @@ class EmployeeManagement():
 
     def add_employee(self):
         while True:
+            print("\n=== Add Employee Menu ===")
             option = menu.show_menu(menu.add_employee_menu)
-            if option in [str(i) for i in range(len(menu.add_employee_menu)-2)]:
+            if option in [str(i) for i in range(len(menu.add_employee_menu)-1)]:
                 empID = input("Enter Employee ID: ").lower()
                 if empID in self.__data:
                     print("\nEmployee ID is exist.")
@@ -117,28 +138,32 @@ class EmployeeManagement():
                 case "1":
                     if self.update_information_employee("tester", empID):
                         print("Add Tester Successfully")
-                case "3":
+                case "2":
                     if self.update_information_employee("teamleader", empID):
                         print("Add Teamleader Successfully")
+                case "3":
+                    break
                 case _:
-                    print("Error Number")
+                    print("\nError Number")
                 
     def update_employee(self):
         empID = input("Enter Employee ID: ").lower()
         if empID not in self.__data:
             print("\nEmployee does not exist.")
             return None
+        print("\n=== Update New Employee's Information ===")
         role = input("Enter new role [Developer/Tester/TeamLeader]: ").lower()
         if role not in ["developer", "tester", "teamleader"]:
             print("Invalid Role")
             return None
                 
         if self.update_information_employee(role, empID):
-            print(f"Update Employee {empID} Successfully")
+            print(f"Update Employee {empID.upper()} Successfully")
         
             
     def search_employee(self):
         while True:
+            print("\n=== Search Employee Menu ===")
             option = menu.show_menu(menu.search_employee_menu)
             match option:
                 case "0":
